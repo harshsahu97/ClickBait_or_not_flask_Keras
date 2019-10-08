@@ -100,7 +100,8 @@ def results(data):
 	input_text = pad_sequences(input_text, maxlen=300)
 	model = load_model('lstm.h5')
 	res = model.predict_classes(input_text)
-	return str(list(res)[0])
+	val = list(res)[0]
+	return render_template('results.html', val = val, data = data) 
 
 if __name__ == '__main__':
     app.run(threaded=False)
