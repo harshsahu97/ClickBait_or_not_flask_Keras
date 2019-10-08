@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from collections import defaultdict
 import nltk
+from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 import re
 
