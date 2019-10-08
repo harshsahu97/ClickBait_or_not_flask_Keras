@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" class="gr__getbootstrap_com">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href=".img/image.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>ClickBait Or Not</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.0/examples/sign-in/"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center" data-gr-c-s-loaded="true">
+    <form class="form-signin" action="{{url_for('getRes')}}" method="post">
+      <img
+        class="mb-4"
+        src="./img/image.png"
+        alt=""
+        width="auto"
+        height="auto"
+      />
+      <h1 class="h3 mb-3 font-weight-normal">ClickBait Or Not</h1>
+      <label for="inputEmail" class="sr-only">Enter a string or headline</label>
+      <input
+        type="text"
+       
+        class="form-control"
+        placeholder="Input a String"
+        required
+        name='str'
+      />
+      <br>
+       <input class="form-control btn btn-primary" type="submit" value="Fetch Result">
+
+    </form>
+  </body>
+</html>
